@@ -14,10 +14,30 @@
   justify-content: space-between;
   align-items: center; }
   .header__logo img {
-    height: 60px; }
+    height: 55px;
+    padding-left: 1rem; }
   .header__user {
     display: flex;
     align-items: center;
     gap: 1.2rem; }
     .header__user_uname {
       font-size: 1.2rem; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem; }
+  .container__keybox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .container__keybox_heading {
+      font-size: 1.2rem;
+      font-weight: 600px;
+      opacity: 0.6;
+      padding-left: 0.6rem; }
+    .container__keybox_key p {
+      background-color: #f6f6f6;
+      border-radius: 10px;
+      padding: 1rem; }
