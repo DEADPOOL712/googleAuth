@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary-color: #d74671;
+  --primary-color-light: #bd3e64;
+  --secondary-color: #363636;
+  --main-bg: #f8fafc;
+  --twitter-bg: #1d9bf0;
+  --github-bg: #a308a3;
+  --main-heading: #4c4c4c;
+  --box-shadow-btn: 0 5px 5px -3px rgb(132, 132, 132);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0.5rem 3rem;
+}
+
+.header {
+  height: 7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subhero {
+  display: flex;
+  padding-top: 1rem;
+}
+.subhero__left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 62%;
+}
+.subhero__right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 3.5rem;
+  margin-left: 2rem;
+}
+
+.header__nav {
+  margin-left: 10rem;
+}
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav ul li {
+  padding: 0 1rem;
+  opacity: 0.8;
+}
+.header__nav ul li a:link,
+.header__nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+  transition: font-size 0.75s;
+}
+.header__nav ul li a:hover {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.header__links {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__links_social-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.header__links_social-logo:hover {
+  color: var(--twitter-bg);
+  scale: 1.1;
+}
+.header__links_social-logo:first-child:hover {
+  color: var(--github-bg);
+}
+.header__links_btn {
+  padding: 0.6rem 2.2rem;
+  background: var(--primary-color);
+  border-radius: 91.5px;
+  font-weight: 400;
+  box-shadow: var(--box-shadow-btn);
+}
+.header__links_btn a:link,
+.header__links_btn a:visited {
+  color: white;
+  text-decoration: none;
+}
+.header__links_btn:hover {
+  transition: all;
+  transition-duration: 0.2s;
+  transform: translatey(-2px);
+}
+.header__links_btn:active {
+  transform: translatey(2px);
+}
+
+.subhero__left img {
+  margin-right: 3rem;
+  min-height: 200px;
+  max-height: 450px;
+}
+
+.subhero__right {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.subhero__right_content h2 {
+  font-family: "Anton", sans-serif;
+  color: var(--main-heading);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  font-style: normal;
+  line-height: 75px;
+  margin: 0;
+}
+.subhero__right_content p {
+  margin-top: 1rem;
+  width: 250px;
+  opacity: 0.7;
+}

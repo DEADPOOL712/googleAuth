@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:-moz-selection {
+  color: #fff;
+  background: #e31c58;
+}
+
+::selection {
+  color: #fff;
+  background: #e31c58;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #e31c58;
+  opacity: 0.8;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  padding: 3%;
+}
+@media only screen and (max-width: 1150px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    min-height: auto;
+  }
+}
+
+.container_left {
+  flex: 0 0 50%;
+  background: #e31c580d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .container_left {
+    min-height: fit-content;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container_left {
+    font-size: 0.7rem;
+    padding-top: 20px;
+    align-items: normal;
+    min-height: 65vh;
+  }
+}
+
+.form__welcome {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  user-select: none;
+}
+@media only screen and (max-width: 425px) {
+  .form__welcome {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 316px) {
+  .form__welcome {
+    font-size: 1.7rem;
+  }
+}
+
+.form__welcome_line {
+  margin-bottom: 1rem;
+  color: #8e8e8e;
+}
+
+.button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px #00000040;
+  cursor: pointer;
+}
+
+.button img {
+  width: 1.5rem;
+  margin-right: 5px;
+}
+
+.form__google_btn {
+  color: #757575;
+  background-color: #fff;
+  font-weight: 500;
+}
+.form__google_btn:visited,
+.form__google_btn:link {
+  color: #757575;
+}
+.form__sign_btn {
+  margin-bottom: 0.7rem;
+  background-color: #e31c58;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.form input {
+  width: 100%;
+  height: 2.3rem;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: 0px 0px 3px #00000040;
+  margin: 0.2rem 0;
+}
+.form input:focus {
+  outline: none !important;
+}
+
+.form__forget_pass {
+  text-align: right;
+  margin: 0.8rem 0;
+  font-size: 0.8rem;
+}
+
+.form__newaccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #8e8e8e;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .form {
+    width: 88%;
+  }
+}
+
+.container_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex: 0 0 50%;
+}
+.container_right img {
+  max-width: 80%;
+  height: auto;
+  width: auto\9;
+}
+@media only screen and (max-width: 1150px) {
+  .container_right img {
+    max-width: 50%;
+  }
+}

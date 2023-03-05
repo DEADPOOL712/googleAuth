@@ -4,270 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
-    <script
-      src="https://kit.fontawesome.com/05a7697907.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        background: #2f3242;
-        font-family: arial, sans-serif;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      h1 {
-        color: #ddd;
-        padding: 20px 20px;
-        font: 10px 40px;
-        margin: 0;
-        display: inline-block;
-      }
-
-      .by {
-        color: #a7a7a7;
-        font-size: 16px;
-        margin: 33px 0px;
-        display: inline-block;
-      }
-
-      .heart {
-        color: brown;
-        display: inline-block;
-        font-size: 20px;
-        animation: heart 0.7s ease-in-out infinite;
-      }
-
-      header a {
-        color: #03b3b5;
-        font-size: 22px;
-        margin: 28px 10px;
-        display: inline-block;
-      }
-
-      header a:hover {
-        text-decoration: underline;
-      }
-
-      .user-card {
-        width: 350px;
-        height: 350px;
-        margin: 50px auto;
-        position: relative;
-        background: #fff;
-        overflow: hidden;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-        -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-        -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-      }
-
-      input {
-        width: 100%;
-        height: 40px;
-        border-radius: 3px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border: 1px solid #dee3e4;
-        padding: 3px 12px;
-        margin: 6px 0;
-      }
-
-      input:focus {
-        outline: none;
-        border: 1px solid #03b3b5;
-        transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-      }
-
-      .login-box,
-      .signup-box {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: calc(100% - 25px);
-        background: #fff;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-      }
-
-      .login-box {
-        padding: 20px 40px;
-        right: 0px;
-      }
-
-      .signup-box {
-        padding: 40px;
-        right: -350px;
-      }
-
-      .login,
-      .signup {
-        text-align: center;
-        color: #fff;
-        background: #03b3b5;
-        line-height: 30px;
-        opacity: 0.95;
-        cursor: pointer;
-      }
-
-      .login:hover {
-        opacity: 1;
-      }
-
-      .or {
-        display: block;
-        width: 100%;
-        height: 1px;
-        border-bottom: 1px solid #dee3e4;
-        position: relative;
-        margin: 20px 0;
-      }
-
-      .or:before {
-        content: "or";
-        width: 40px;
-        height: 18px;
-        position: absolute;
-        top: -5px;
-        right: calc(50% - 20px);
-        background-color: #fff;
-        text-align: center;
-        line-height: 10px;
-        color: #555;
-      }
-
-      .login-with-fb,
-      .login-with-google {
-        width: 100%;
-        height: 40px;
-        display: block;
-        margin: 15px 0;
-        color: #fff;
-        text-align: center;
-        line-height: 40px;
-        font-size: 14px;
-        opacity: 0.95;
-        border-radius: 3px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-      }
-
-      .login-with-fb:hover,
-      .login-with-google:hover {
-        opacity: 1;
-      }
-
-      .login-with-fb {
-        background: #527ebf;
-      }
-
-      .login-with-google {
-        background: #db4a37;
-      }
-
-      .login-with-fb .icon,
-      .login-with-google .icon {
-        float: left;
-        font-size: 21px;
-        width: 50px;
-        height: 26px;
-        margin: 7px;
-        padding: 2px;
-        text-align: center;
-        border-right: 1px solid #fff;
-      }
-
-      @keyframes heart {
-        0% {
-          transform: scale(1, 1);
-          -ms-transform: scale(1, 1);
-          -webkit-transform: scale(1, 1);
-        }
-        50% {
-          transform: scale(1.5, 1.5);
-          -ms-transform: scale(1.5, 1.5);
-          -webkit-transform: scale(1.5, 1.5);
-        }
-        100% {
-          transform: scale(1, 1);
-          -ms-transform: scale(1, 1);
-          -webkit-transform: scale(1, 1);
-        }
-      }
-    </style>
+    <title>The Flow</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <div class="user-card round5">
-      <div class="login-box">
-        <form class="login-form" name="login" action="">
+    <div class="container">
+      <div class="container_left">
+        <form class="form">
+          <p class="form__welcome">Welcome Back !</p>
+          <p class="form__welcome_line">
+            welcome back ! please enter you details
+          </p>
+          <label for="email">Email</label><br />
           <input
-            type="username"
-            name="username"
-            class="username"
-            placeholder="username"
-          />
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter you email"
+            autocomplete="off"
+          /><br />
+          <label for="password">Password</label><br />
           <input
             type="password"
+            id="password"
             name="password"
-            class="password"
-            placeholder="password"
-          />
-          <input type="submit" name="login" value="Login" class="login" />
+            placeholder="**********"
+            autocomplete="off"
+          /><br />
+          <p class="form__forget_pass">
+            <a href="#">Forget password</a>
+          </p>
+          <button class="form__sign_btn button">Sign in</button>
+          <a class="form__google_btn button" href="auth/google">
+            <img src="/img/google.png" />Sign in with google
+          </a>
+          <div class="form__newaccount">
+            <span>Don't have an account ?</span>
+            <span>&nbsp; <a href="#">Sign up</a></span>
+          </div>
         </form>
-
-        <div class="or"></div>
-
-        <a href="/auth/google" class="login-with-google">
-          <span class="icon fa fa-google-plus"></span>
-          Login with google
-        </a>
-        <a href="#" class="login-with-fb">
-          <span class="icon fa fa-facebook"></span>
-          Login with facebook
-        </a>
       </div>
-      <div class="signup-box">
-        <form class="signup-form" name="signup" action="">
-          <input
-            type="username"
-            name="username"
-            class="username"
-            placeholder="username"
-          />
-          <input type="email" name="email" class="email" placeholder="email" />
-          <input
-            type="password"
-            name="password"
-            class="password"
-            placeholder="password"
-          />
-          <input
-            type="password"
-            name="confirm-password"
-            class="confirm-password"
-            placeholder="confirm-password"
-          />
-          <input type="submit" name="signup" value="Signup" class="signup" />
-        </form>
+      <div class="container_right">
+        <img src="/img/login.gif" alt="login" />
       </div>
     </div>
+    <script>
+      const redirect = function () {
+        console.log("HELLO WORLD ");
+      };
+    </script>
   </body>
 </html>

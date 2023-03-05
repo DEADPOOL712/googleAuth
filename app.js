@@ -39,6 +39,9 @@ app.use("/api", apiRoutes);
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/d", (req, res) => {
+  res.render("dashbord");
+});
 
 app.listen(3000, () => {
   console.log("app now listening for requests on port 3000");
